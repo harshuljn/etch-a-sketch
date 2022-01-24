@@ -1,0 +1,14 @@
+#sketchpad {
+	display: flex;
+	flex-wrap: wrap;
+	height: 33.33%;
+	width: 33.33%;
+	margin: 10px auto;
+}
+
+div .pixel {
+	flex: 0 0 6.25%;
+	border: 1px solid black;
+	box-sizing: border-box;
+	aspect-ratio: 1;
+}
