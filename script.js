@@ -4,3 +4,10 @@ for (let i = 0; i < 16 * 16; i++) {
 	padSquare.classList.add("pixel");
 	sketchpad.appendChild(padSquare);
 }
+
+const pixels = document.querySelectorAll(".pixel");
+pixels.forEach((pixel) =>
+	pixel.addEventListener("mouseover", () => {
+		pixel.classList.add("colored");
+	})
+);

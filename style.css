@@ -20,3 +20,7 @@ div .pixel {
 	box-sizing: border-box;
 	aspect-ratio: 1;
 }
+
+.colored {
+	background-color: black;
+}
