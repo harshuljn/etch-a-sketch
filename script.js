@@ -1,9 +1,10 @@
 const sketchpad = document.querySelector("#sketchpad");
-let gridSide = 16;
+let gridSide = 32;
 for (let i = 0; i < gridSide ** 2; i++) {
-	const girdPixel = document.createElement("div");
-	girdPixel.classList.add("gridPixel");
-	sketchpad.appendChild(girdPixel);
+	const gridPixel = document.createElement("div");
+	gridPixel.style.flex = `0 0 ${100 / gridSide}%`;
+	gridPixel.classList.add("gridPixel");
+	sketchpad.appendChild(gridPixel);
 }
 
 const pixels = document.querySelectorAll(".gridPixel");
