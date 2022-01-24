@@ -1,11 +1,12 @@
 const sketchpad = document.querySelector("#sketchpad");
-for (let i = 0; i < 16 * 16; i++) {
-	const padSquare = document.createElement("div");
-	padSquare.classList.add("pixel");
-	sketchpad.appendChild(padSquare);
+let gridSide = 16;
+for (let i = 0; i < gridSide ** 2; i++) {
+	const girdPixel = document.createElement("div");
+	girdPixel.classList.add("gridPixel");
+	sketchpad.appendChild(girdPixel);
 }
 
-const pixels = document.querySelectorAll(".pixel");
+const pixels = document.querySelectorAll(".gridPixel");
 pixels.forEach((pixel) =>
 	pixel.addEventListener("mouseover", () => {
 		pixel.classList.add("colored");
